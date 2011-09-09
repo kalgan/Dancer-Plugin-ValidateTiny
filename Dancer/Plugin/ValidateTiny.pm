@@ -8,8 +8,6 @@ use Dancer::Plugin;
 use Validate::Tiny ':all';
 use Email::Valid;
 
-
-use Data::Dumper;
 =head1 NAME
 
 Dancer::Plugin::ValidateTiny - Validate::Tiny dancer plugin.
@@ -30,7 +28,7 @@ register validator => sub
 	my ($params, $rules_file) = @_;
 
 	my $result = {};
-	
+
 	# Loading rules from file
 	my $rules = _load_rules($rules_file);
 
@@ -82,7 +80,7 @@ register validator => sub
 sub _set_error_prefixes
 {
 	my $errors = shift;
-	
+
 	foreach my $error (keys %{$errors})
 	{
 		# Replacing keys with prefix. O_o
@@ -95,7 +93,7 @@ sub _set_error_prefixes
 sub _load_rules
 {
 	my $rules_file = shift;
-	
+
 	# Checking plugin settings and rules file for existing
 	die "Rules directory not specified in plugin settings!" if !$settings->{rules_dir};
 	die "Rules file not specified!" if !$rules_file;
