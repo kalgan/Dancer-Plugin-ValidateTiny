@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=<% settings.charset %>" />
+	<title>validatetiny_example</title>
+	<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+</head>
+<body>
+	<div id="layout">
+		<h1>Dancer::Plugin::ValidateTiny Example</h1>
+		<% content %>
+	</div>
+</body>
+</html>

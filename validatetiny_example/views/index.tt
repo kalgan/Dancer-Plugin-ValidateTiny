@@ -1,0 +1,25 @@
+<form action="/" method="post">
+	<div>
+		<p>Login:</p>
+		<input type="text" name="login" value="<% fields.login %>" />
+		<span class="error"><% fields.err_login %></span>
+	</div>
+	<div>
+		<p>E-mail:</p>
+		<input type="text" name="email" value="<% fields.email %>" />
+		<span class="error"><% fields.err_email %></span>
+	</div>
+	<div>
+		<p>Password:</p>
+		<input type="text" name="password" value="<% fields.password %>" />
+		<span class="error"><% fields.err_password %></span>
+	</div>
+	<div>
+		<p>Password again:</p>
+		<input type="text" name="password2" value="<% fields.password2 %>" />
+		<span class="error"><% fields.err_password2 %></span>
+	</div>
+	<input type="submit" value="Submit Form" />
+	<% IF data_valid %><span class="ok">&nbsp;ALL OK!</span><% END %>
+</form>
+
