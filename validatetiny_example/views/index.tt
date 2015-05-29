@@ -20,6 +20,6 @@
 		<span class="error"><% fields.err_password2 %></span>
 	</div>
 	<input type="submit" value="Submit Form" />
-	<% IF data_valid %><span class="ok">&nbsp;ALL OK!</span><% END %>
+	<% if data_valid %><span class="ok">Successful validation!</span><% end %>
 </form>
 

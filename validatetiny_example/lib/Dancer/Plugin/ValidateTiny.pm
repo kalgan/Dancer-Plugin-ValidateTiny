@@ -9,7 +9,7 @@ use Validate::Tiny ':all';
 use Email::Valid;
 
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my $settings = plugin_setting;
 
@@ -24,7 +24,7 @@ register validator => sub
 	my $rules = _load_rules($rules_file);
 
 	# Validating
-	my $validator = Validate::Tiny->new($params, $rules);
+	my $validator = Validate::Tiny->check($params, $rules);
 
 	# If you need a full Validate::Tiny object
 	if($settings->{is_full} eq 1)

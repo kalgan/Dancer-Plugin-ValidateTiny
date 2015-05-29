@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 # the order is important
-use validatetiny_example;
+use example;
 use Dancer::Test;
 
 route_exists [GET => '/'], 'a route handler is defined for /';
