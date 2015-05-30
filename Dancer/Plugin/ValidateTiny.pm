@@ -9,7 +9,7 @@ use Validate::Tiny ':all';
 use Email::Valid;
 
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 my $settings = plugin_setting;
 
@@ -118,7 +118,7 @@ Dancer::Plugin::ValidateTiny - Validate::Tiny Dancer plugin.
 
 =head1 VERSION
 
-Version 0.04
+Version 0.06
 
 =head1 SYNOPSIS
 
@@ -172,7 +172,7 @@ for rules and additional functions for data validation.
 
 =head1 METHODS
 
-=head2 validate
+=head2 validator
 
 This is the main method, that receiving C<params> from C<POST> or C<GET> (or whatever), and
 filename, which contains rules for validation:
@@ -217,7 +217,7 @@ a simple structure like this one:
 
 For other rules, you can refer to the documentation of L<Validate::Tiny> module.
 
-After creating rule file, you just need to specify it's name in L</validate> method.
+After creating rule file, you just need to specify it's name in L</validator> method.
 Simple, yeah? :)
 
 
